@@ -1,0 +1,38 @@
+# OSINT Aggregator Requirements
+# ==============================
+# Python 3.8+ required
+
+# Core HTTP library for making requests to OSINT sources
+requests>=2.31.0
+
+# HTML parsing library for web scraping (optional, for future modules)
+beautifulsoup4>=4.12.0
+
+# HTML parser for BeautifulSoup
+lxml>=4.9.0
+
+# For parsing and validation
+python-dateutil>=2.8.0
+
+# For colored terminal output (already implemented with ANSI codes, but can use this)
+# colorama>=0.4.6  # Uncomment if you want cross-platform color support
+
+# Optional: For advanced scraping (uncomment if needed)
+# selenium>=4.15.0  # For JavaScript-heavy sites
+# playwright>=1.40.0  # Modern alternative to Selenium
+
+# Optional: For IP lookup modules (uncomment when implementing)
+# ipaddress>=1.0.23  # Built-in for Python 3.3+, but listed for reference
+
+# Optional: For email validation (uncomment if needed)
+# email-validator>=2.1.0
+
+# Optional: For async operations (uncomment for async modules)
+# aiohttp>=3.9.0
+# asyncio>=3.4.3  # Built-in for Python 3.4+
+
+# Development dependencies (uncomment for development)
+# pytest>=7.4.0  # For unit testing
+# black>=23.12.0  # Code formatter
+# flake8>=6.1.0  # Linter
+# mypy>=1.7.0  # Type checker
