@@ -25,7 +25,7 @@ export async function GET(request: NextRequest) {
         `, [clientIp]);
 
         const count = result.rows.length > 0 ? result.rows[0].count : 0;
-        const limit = 12;
+        const limit = 30;
 
         return NextResponse.json({
             count,
@@ -35,6 +35,6 @@ export async function GET(request: NextRequest) {
 
     } catch (error) {
         console.error("Limit Check Error:", error);
-        return NextResponse.json({ count: 0, limit: 12, remaining: 12 }, { status: 200 }); // Fail gracefully
+        return NextResponse.json({ count: 0, limit: 30, remaining: 30 }, { status: 200 }); // Fail gracefully
     }
 }
